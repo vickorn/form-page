@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+}
+
+body {    
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    background-image: url('../image/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: darkgray;
+}
+
+#main-div{
+    background-color: darkslateblue;
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    opacity: 90%;
+}
+
+#title-div {
+    margin-bottom: 20px;
+}
+
+#title-div h1 {
+    text-align: center;
+    font-size: 64px;
+}
+
+#title-div p {
+    text-align: center;
+    font-size: 24px;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input,  select, textarea {
+    margin: 5px 0px 5px 0px;
+}
+
+hr {
+    margin: 10px 0px 20px 0px;
+}
+
+#submit {
+    background-color: darkblue;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}

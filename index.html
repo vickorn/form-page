@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="main-div">
+        <div id="title-div">
+            <h1 id="title">Form page</h1>
+            <p id="description">Example page of a form page.</p>
+        </div>
+        <form action="#" id="survey-form">
+            
+            <!-- Personal information section (name, email, age) -->
+            <label for="name" id="name-label" class="form-field" >Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name here" required> 
+
+            <label for="email" id="email-label" class="form-field">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Eg. youremail@example.com" required> 
+
+            <label for="age" id="number-label" class="form-field">Age (optional)</label>
+            <input type="number" name="age" id="number" min="1" max="100" placeholder="Your actual age"> 
+
+            <!-- Dropdown section -->
+            <label for="gender" class="form-field"> Gender </label>
+            <select name="gender" id="dropdown" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <hr />
+            <!-- Radio buttons section -->
+            <label for="btn-radio" class="form-field" required>Where did you hear about my web?</label>
+            <input type="radio" name="btn-radio" value="google" /> Google
+            <input type="radio" name="btn-radio" value="freecodecamp" /> FreeCodeCamp
+            <input type="radio" name="btn-radio" value="youtube" /> Youtube
+            <input type="radio" name="btn-radio" value="other" /> Other
+            
+            <hr />
+            <!-- Checkbox buttons section -->
+            <label for="btn-checkbox" class="form-field" required>Interest</label>
+            <input type="checkbox" name="btn-checkbox" value="ecommerce" /> E-commerce
+            <input type="checkbox" name="btn-checkbox" value="marketing" /> Marketing
+            <input type="checkbox" name="btn-checkbox" value="books" /> Books
+            <input type="checkbox" name="btn-checkbox" value="other" /> Other
+            
+            <hr />
+            <!-- Textarea section -->
+            <label for="textarea" class="form-field">Any comment about my web? (optional)</label>
+            <textarea id="textarea" name="textarea" ></textarea>
+            
+            <!-- Submit button section -->
+            <button type="submit" id="submit">Send</button>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
